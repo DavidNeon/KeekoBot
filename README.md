@@ -1,4 +1,4 @@
-KeekoBot a wonderful bot with amazing features.
+#KeekoBot a wonderful bot with amazing features.
 
 Keeko is a useful discord bot with amazing features. Want to join us now?
 
