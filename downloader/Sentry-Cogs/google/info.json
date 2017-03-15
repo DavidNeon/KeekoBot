@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "Sentry",
+    "INSTALL_MSG" : "Thank your for installing my google cog.",
+    "NAME" : "google",
+    "SHORT" : "google quickly for things",
+    "DESCRIPTION" : "google quickly for things",
+    "REQUIREMENTS" : ["google"],
+    "TAGS": ["google"]
+}

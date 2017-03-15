@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "Sentry",
+    "INSTALL_MSG" : "Thanks for installing gameserver.\nLook up servers via ip port \nExample:\n[p]getserver 123.123.123.123:45678",
+    "NAME" : "gameserver",
+    "SHORT" : "Fetch game servers in Discord",
+    "DESCRIPTION" : "Fetch game servers in Discord",
+    "REQUIREMENTS" : ["python-valve"],
+    "TAGS": ["source","engine","steam","server","game","csgo","tf2"]
+}

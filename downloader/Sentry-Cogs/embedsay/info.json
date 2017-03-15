@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "Sentry",
+    "INSTALL_MSG" : "Thank you for installing embedsay",
+    "NAME" : "embedsay",
+    "SHORT" : "makes the bot say things for you in embeds",
+    "DESCRIPTION" : "makes the bot say say things for you in EMBEDS :O",
+    "TAGS": ["embed","say","selfbot"]
+}

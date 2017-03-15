@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "Sentry",
+    "INSTALL_MSG" : "Thank your for installing my updatestatus cog,\nUse [p]behind to see if your bot is up to date.",
+    "NAME" : "updatestatus",
+    "SHORT" : "red update status",
+    "DESCRIPTION" : "red update status",
+    "TAGS": ["update","red"]
+}

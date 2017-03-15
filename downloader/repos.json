@@ -1,0 +1,88 @@
+{
+    "RiceCogs" : {
+        "birthday" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/RiceCogs\\birthday\\birthday.py",
+            "folder" : "data/downloader/RiceCogs\\birthday"
+        },
+        "code" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/RiceCogs\\code\\code.py",
+            "folder" : "data/downloader/RiceCogs\\code"
+        },
+        "configuration" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/RiceCogs\\configuration\\configuration.py",
+            "folder" : "data/downloader/RiceCogs\\configuration"
+        },
+        "embedhelp" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/RiceCogs\\embedhelp\\embedhelp.py",
+            "folder" : "data/downloader/RiceCogs\\embedhelp"
+        },
+        "url" : "https://github.com/QingyuChai/RiceCogs",
+        "waitroom" : {
+            "INSTALLED" : true,
+            "file" : "data/downloader/RiceCogs\\waitroom\\waitroom.py",
+            "folder" : "data/downloader/RiceCogs\\waitroom"
+        },
+        "warn" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/RiceCogs\\warn\\warn.py",
+            "folder" : "data/downloader/RiceCogs\\warn"
+        }
+    },
+    "Sentry-Cogs" : {
+        "bottlespin" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/Sentry-Cogs\\bottlespin\\bottlespin.py",
+            "folder" : "data/downloader/Sentry-Cogs\\bottlespin"
+        },
+        "channelinfo" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/Sentry-Cogs\\channelinfo\\channelinfo.py",
+            "folder" : "data/downloader/Sentry-Cogs\\channelinfo"
+        },
+        "embedsay" : {
+            "INSTALLED" : true,
+            "file" : "data/downloader/Sentry-Cogs\\embedsay\\embedsay.py",
+            "folder" : "data/downloader/Sentry-Cogs\\embedsay"
+        },
+        "gameserver" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/Sentry-Cogs\\gameserver\\gameserver.py",
+            "folder" : "data/downloader/Sentry-Cogs\\gameserver"
+        },
+        "google" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/Sentry-Cogs\\google\\google.py",
+            "folder" : "data/downloader/Sentry-Cogs\\google"
+        },
+        "info" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/Sentry-Cogs\\info\\info.py",
+            "folder" : "data/downloader/Sentry-Cogs\\info"
+        },
+        "lenny" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/Sentry-Cogs\\lenny\\lenny.py",
+            "folder" : "data/downloader/Sentry-Cogs\\lenny"
+        },
+        "nep" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/Sentry-Cogs\\nep\\nep.py",
+            "folder" : "data/downloader/Sentry-Cogs\\nep"
+        },
+        "terminal" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/Sentry-Cogs\\terminal\\terminal.py",
+            "folder" : "data/downloader/Sentry-Cogs\\terminal"
+        },
+        "updatestatus" : {
+            "INSTALLED" : false,
+            "file" : "data/downloader/Sentry-Cogs\\updatestatus\\updatestatus.py",
+            "folder" : "data/downloader/Sentry-Cogs\\updatestatus"
+        },
+        "url" : "https://github.com/Jan200101/Sentry-Cogs"
+    }
+}

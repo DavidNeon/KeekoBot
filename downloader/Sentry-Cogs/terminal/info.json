@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "Sentry",
+    "INSTALL_MSG" : "⚠⚠⚠⚠⚠⚠\nThank you for installing Terminal.\nThis Cog is just like the Linux Terminal or Windows Command Prompt\n(Depends on which the bot is hosted on)\nSo misuse from the Owner can lead to deletion of data or worst.\nI do not take fault on what you it.",
+    "NAME" : "terminal",
+    "SHORT" : "A Terminal/Command Prompt inside Discord",
+    "DESCRIPTION" : "A Linux Termial or Windows Command prompt inside Discord.",
+    "TAGS": ["terminal"]
+}

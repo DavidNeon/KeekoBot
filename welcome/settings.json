@@ -1,0 +1,22 @@
+{
+    "288018843304198144" : {
+        "BOTS_MSG" : null,
+        "BOTS_ROLE" : null,
+        "CHANNEL" : "288018843304198144",
+        "GREETING" : [
+            "Welcome {0.name} to {1.name}!"
+        ],
+        "ON" : false,
+        "WHISPER" : false
+    },
+    "288051145308504064" : {
+        "BOTS_MSG" : null,
+        "BOTS_ROLE" : null,
+        "CHANNEL" : "288051145308504064",
+        "GREETING" : [
+            "Welcome {0.name} to {1.name}!"
+        ],
+        "ON" : false,
+        "WHISPER" : false
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "cogs.alias" : true,
+    "cogs.audio" : true,
+    "cogs.avatar" : true,
+    "cogs.away" : true,
+    "cogs.buyrole" : true,
+    "cogs.customcom" : true,
+    "cogs.downloader" : true,
+    "cogs.economy" : true,
+    "cogs.embedsay" : true,
+    "cogs.general" : true,
+    "cogs.image" : true,
+    "cogs.mod" : true,
+    "cogs.smartreact" : true,
+    "cogs.strawpoll" : true,
+    "cogs.streams" : true,
+    "cogs.trivia" : true,
+    "cogs.waitroom" : false,
+    "cogs.warn" : true,
+    "cogs.welcome" : true,
+    "cogs.wikipedia" : true
+}

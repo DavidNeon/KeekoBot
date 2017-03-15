@@ -1,0 +1,258 @@
+[11/03/2017 20:52] ERROR red <module> 622: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "lib\websockets\client.py", line 79, in handshake
+    status_code, headers = yield from read_response(self.reader)
+  File "lib\websockets\http.py", line 65, in read_response
+    status_line, headers = yield from read_message(stream)
+  File "lib\websockets\http.py", line 83, in read_message
+    start_line = yield from read_line(stream)
+  File "lib\websockets\http.py", line 107, in read_line
+    raise ValueError("Line without CRLF")
+ValueError: Line without CRLF
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "red.py", line 603, in <module>
+    loop.run_until_complete(main(bot))
+  File "C:\Users\WidDo\AppData\Local\Programs\Python\Python36-32\lib\asyncio\base_events.py", line 466, in run_until_complete
+    return future.result()
+  File "red.py", line 592, in main
+    yield from bot.connect()
+  File "lib\discord\client.py", line 444, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self)
+  File "lib\discord\gateway.py", line 194, in from_client
+    ws = yield from websockets.connect(gateway, loop=client.loop, klass=cls)
+  File "lib\websockets\py35\client.py", line 19, in __await__
+    return (yield from self.client)
+  File "lib\websockets\client.py", line 165, in connect
+    extra_headers=extra_headers)
+  File "lib\websockets\client.py", line 81, in handshake
+    raise InvalidHandshake("Malformed HTTP message") from exc
+websockets.exceptions.InvalidHandshake: Malformed HTTP message
+[11/03/2017 21:25] ERROR red <module> 622: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "red.py", line 603, in <module>
+    loop.run_until_complete(main(bot))
+  File "C:\Users\WidDo\AppData\Local\Programs\Python\Python36-32\lib\asyncio\base_events.py", line 466, in run_until_complete
+    return future.result()
+  File "red.py", line 592, in main
+    yield from bot.connect()
+  File "lib\discord\client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "lib\discord\gateway.py", line 193, in from_client
+    gateway = yield from client.http.get_gateway()
+  File "lib\discord\http.py", line 631, in get_gateway
+    data = yield from self.request(Route('GET', '/gateway'))
+  File "lib\discord\http.py", line 136, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "lib\aiohttp\client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "lib\aiohttp\client.py", line 198, in _request
+    conn = yield from self._connector.connect(req)
+  File "lib\async_timeout\__init__.py", line 44, in __exit__
+    raise asyncio.TimeoutError from None
+concurrent.futures._base.TimeoutError
+[11/03/2017 21:41] ERROR owner load 75: No module named 'cleverbot'
+Traceback (most recent call last):
+  File "C:\Users\WidDo\Desktop\Scarlet Academy\KeekoBot\KeekoBot\cogs\owner.py", line 65, in load
+    self._load_cog(module)
+  File "C:\Users\WidDo\Desktop\Scarlet Academy\KeekoBot\KeekoBot\cogs\owner.py", line 797, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "C:\Users\WidDo\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "C:\Users\WidDo\Desktop\Scarlet Academy\KeekoBot\KeekoBot\cogs\talk.py", line 4, in <module>
+    from cleverbot import Cleverbot
+ModuleNotFoundError: No module named 'cleverbot'
+[11/03/2017 21:49] ERROR red on_command_error 363: Exception in command 'play'
+Traceback (most recent call last):
+  File "lib\discord\ext\commands\core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "C:\Users\WidDo\Desktop\Scarlet Academy\KeekoBot\KeekoBot\cogs\audio.py", line 1362, in play
+    await self._join_voice_channel(voice_channel)
+  File "C:\Users\WidDo\Desktop\Scarlet Academy\KeekoBot\KeekoBot\cogs\audio.py", line 645, in _join_voice_channel
+    timeout=5, loop=self.bot.loop)
+  File "C:\Users\WidDo\AppData\Local\Programs\Python\Python36-32\lib\asyncio\tasks.py", line 352, in wait_for
+    return fut.result()
+  File "lib\discord\client.py", line 3196, in join_voice_channel
+    voice = VoiceClient(**kwargs)
+  File "lib\discord\voice_client.py", line 217, in __init__
+    raise RuntimeError("PyNaCl library needed in order to use voice")
+RuntimeError: PyNaCl library needed in order to use voice
+[12/03/2017 00:53] ERROR red <module> 622: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "lib\aiohttp\client.py", line 202, in _request
+    yield from resp.start(conn, read_until_eof)
+  File "lib\aiohttp\client_reqrep.py", line 640, in start
+    message = yield from httpstream.read()
+  File "lib\aiohttp\streams.py", line 641, in read
+    result = yield from super().read()
+  File "lib\aiohttp\streams.py", line 476, in read
+    yield from self._waiter
+aiohttp.errors.ServerDisconnectedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "red.py", line 603, in <module>
+    loop.run_until_complete(main(bot))
+  File "C:\Users\WidDo\AppData\Local\Programs\Python\Python36-32\lib\asyncio\base_events.py", line 466, in run_until_complete
+    return future.result()
+  File "red.py", line 592, in main
+    yield from bot.connect()
+  File "lib\discord\client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "lib\discord\gateway.py", line 193, in from_client
+    gateway = yield from client.http.get_gateway()
+  File "lib\discord\http.py", line 631, in get_gateway
+    data = yield from self.request(Route('GET', '/gateway'))
+  File "lib\discord\http.py", line 136, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "lib\aiohttp\client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "lib\aiohttp\client.py", line 209, in _request
+    raise aiohttp.ClientResponseError() from exc
+aiohttp.errors.ClientResponseError
+[12/03/2017 09:36] ERROR red <module> 622: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "lib\aiohttp\connector.py", line 601, in _create_direct_connection
+    local_addr=self._local_addr)
+  File "C:\Users\WidDo\AppData\Local\Programs\Python\Python36-32\lib\asyncio\base_events.py", line 776, in create_connection
+    raise exceptions[0]
+  File "C:\Users\WidDo\AppData\Local\Programs\Python\Python36-32\lib\asyncio\base_events.py", line 763, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "C:\Users\WidDo\AppData\Local\Programs\Python\Python36-32\lib\asyncio\selector_events.py", line 451, in sock_connect
+    return (yield from fut)
+  File "C:\Users\WidDo\AppData\Local\Programs\Python\Python36-32\lib\asyncio\selector_events.py", line 481, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+OSError: [Errno 10065] Connect call failed ('104.16.59.5', 443)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "lib\aiohttp\connector.py", line 304, in connect
+    yield from self._create_connection(req)
+  File "lib\aiohttp\connector.py", line 578, in _create_connection
+    transport, proto = yield from self._create_direct_connection(req)
+  File "lib\aiohttp\connector.py", line 624, in _create_direct_connection
+    (req.host, req.port, exc.strerror)) from exc
+aiohttp.errors.ClientOSError: [Errno 10065] Can not connect to discordapp.com:443 [Connect call failed ('104.16.59.5', 443)]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "red.py", line 603, in <module>
+    loop.run_until_complete(main(bot))
+  File "C:\Users\WidDo\AppData\Local\Programs\Python\Python36-32\lib\asyncio\base_events.py", line 466, in run_until_complete
+    return future.result()
+  File "red.py", line 592, in main
+    yield from bot.connect()
+  File "lib\discord\client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "lib\discord\gateway.py", line 193, in from_client
+    gateway = yield from client.http.get_gateway()
+  File "lib\discord\http.py", line 631, in get_gateway
+    data = yield from self.request(Route('GET', '/gateway'))
+  File "lib\discord\http.py", line 136, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "lib\aiohttp\client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "lib\aiohttp\client.py", line 198, in _request
+    conn = yield from self._connector.connect(req)
+  File "lib\aiohttp\connector.py", line 314, in connect
+    .format(key, exc.strerror)) from exc
+aiohttp.errors.ClientOSError: [Errno 10065] Cannot connect to host discordapp.com:443 ssl:True [Can not connect to discordapp.com:443 [Connect call failed ('104.16.59.5', 443)]]
+[12/03/2017 09:59] ERROR owner avatar 496: Unsupported image type given
+Traceback (most recent call last):
+  File "C:\Users\WidDo\Desktop\Scarlet Academy\KeekoBot\KeekoBot\cogs\owner.py", line 490, in avatar
+    await self.bot.edit_profile(self.bot.settings.password, avatar=data)
+  File "lib\discord\client.py", line 1841, in edit_profile
+    avatar = utils._bytes_to_base64_data(avatar_bytes)
+  File "lib\discord\utils.py", line 247, in _bytes_to_base64_data
+    mime = _get_mime_type_for_image(data)
+  File "lib\discord\utils.py", line 243, in _get_mime_type_for_image
+    raise InvalidArgument('Unsupported image type given')
+discord.errors.InvalidArgument: Unsupported image type given
+[12/03/2017 10:05] ERROR owner avatar 496: Unsupported image type given
+Traceback (most recent call last):
+  File "C:\Users\WidDo\Desktop\Scarlet Academy\KeekoBot\KeekoBot\cogs\owner.py", line 490, in avatar
+    await self.bot.edit_profile(self.bot.settings.password, avatar=data)
+  File "lib\discord\client.py", line 1841, in edit_profile
+    avatar = utils._bytes_to_base64_data(avatar_bytes)
+  File "lib\discord\utils.py", line 247, in _bytes_to_base64_data
+    mime = _get_mime_type_for_image(data)
+  File "lib\discord\utils.py", line 243, in _get_mime_type_for_image
+    raise InvalidArgument('Unsupported image type given')
+discord.errors.InvalidArgument: Unsupported image type given
+[12/03/2017 10:42] ERROR red on_command_error 363: Exception in command 'embedcoloradmin'
+Traceback (most recent call last):
+  File "lib\discord\ext\commands\core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "C:\Users\WidDo\Desktop\Scarlet Academy\KeekoBot\KeekoBot\cogs\embedsay.py", line 165, in embedcoloradmin
+    color = int(color, 16)
+ValueError: invalid literal for int() with base 16: 'We'
+[12/03/2017 12:02] ERROR red <module> 622: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "red.py", line 603, in <module>
+    loop.run_until_complete(main(bot))
+  File "C:\Users\WidDo\AppData\Local\Programs\Python\Python36-32\lib\asyncio\base_events.py", line 466, in run_until_complete
+    return future.result()
+  File "red.py", line 592, in main
+    yield from bot.connect()
+  File "lib\discord\client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "lib\discord\gateway.py", line 194, in from_client
+    ws = yield from websockets.connect(gateway, loop=client.loop, klass=cls)
+  File "lib\websockets\py35\client.py", line 19, in __await__
+    return (yield from self.client)
+  File "lib\websockets\client.py", line 160, in connect
+    factory, wsuri.host, wsuri.port, **kwds)
+  File "C:\Users\WidDo\AppData\Local\Programs\Python\Python36-32\lib\asyncio\base_events.py", line 802, in create_connection
+    sock, protocol_factory, ssl, server_hostname)
+  File "C:\Users\WidDo\AppData\Local\Programs\Python\Python36-32\lib\asyncio\base_events.py", line 828, in _create_connection_transport
+    yield from waiter
+ConnectionResetError
+[12/03/2017 12:11] ERROR owner avatar 496: Unsupported image type given
+Traceback (most recent call last):
+  File "C:\Users\WidDo\Desktop\Scarlet Academy\KeekoBot\KeekoBot\cogs\owner.py", line 490, in avatar
+    await self.bot.edit_profile(self.bot.settings.password, avatar=data)
+  File "lib\discord\client.py", line 1841, in edit_profile
+    avatar = utils._bytes_to_base64_data(avatar_bytes)
+  File "lib\discord\utils.py", line 247, in _bytes_to_base64_data
+    mime = _get_mime_type_for_image(data)
+  File "lib\discord\utils.py", line 243, in _get_mime_type_for_image
+    raise InvalidArgument('Unsupported image type given')
+discord.errors.InvalidArgument: Unsupported image type given
+[12/03/2017 20:09] INFO economy _set 393: DavidDoesBotCoding(211959464444559360) set 100000000000000000000000000 credits to DavidDoesBotCoding (211959464444559360)
+[13/03/2017 20:33] ERROR red on_command_error 363: Exception in command 'cleanup messages'
+Traceback (most recent call last):
+  File "lib\discord\ext\commands\core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "C:\Users\WidDo\Desktop\Scarlet Academy\KeekoBot\KeekoBot\cogs\mod.py", line 756, in messages
+    await self.mass_purge(to_delete)
+  File "C:\Users\WidDo\Desktop\Scarlet Academy\KeekoBot\KeekoBot\cogs\mod.py", line 1246, in mass_purge
+    await self.bot.delete_messages(messages[:100])
+  File "lib\discord\client.py", line 1302, in delete_messages
+    yield from self.http.delete_messages(channel.id, message_ids, guild_id)
+  File "lib\discord\http.py", line 198, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: BAD REQUEST (status code: 400): You can only bulk delete messages that are under 14 days old.
+[13/03/2017 20:34] ERROR red on_command_error 363: Exception in command 'cleanup messages'
+Traceback (most recent call last):
+  File "lib\discord\ext\commands\core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "C:\Users\WidDo\Desktop\Scarlet Academy\KeekoBot\KeekoBot\cogs\mod.py", line 756, in messages
+    await self.mass_purge(to_delete)
+  File "C:\Users\WidDo\Desktop\Scarlet Academy\KeekoBot\KeekoBot\cogs\mod.py", line 1246, in mass_purge
+    await self.bot.delete_messages(messages[:100])
+  File "lib\discord\client.py", line 1302, in delete_messages
+    yield from self.http.delete_messages(channel.id, message_ids, guild_id)
+  File "lib\discord\http.py", line 198, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: BAD REQUEST (status code: 400): You can only bulk delete messages that are under 14 days old.

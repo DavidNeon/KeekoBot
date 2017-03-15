@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "Sentry",
+    "INSTALL_MSG" : "Thank your for installing my lenny cog.",
+    "NAME" : "lenny",
+    "SHORT" : "a one command lenny generator",
+    "DESCRIPTION" : "a one command lenny generator",
+    "TAGS": ["Lenny"]
+}

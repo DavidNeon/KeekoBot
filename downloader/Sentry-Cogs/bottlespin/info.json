@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "Sentry",
+    "SHORT" : "bottle spinning in Discord",
+    "DESCRIPTION" : "bottle spinning in Discord now without a bottle",
+    "DISABLED" : false,
+    "NAME" : "Bottlespin",
+    "INSTALL_MSG" : "Thanks for installing my bottle spinning command",
+    "TAGS": ["bottle","spin"]
+}
