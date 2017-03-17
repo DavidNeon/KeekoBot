@@ -1,10 +1,10 @@
-![intro](http://imgur.com/gallery/I8GCojs)
+
 
 # Keeko - A fully customizable Discord bot
 #### *Music, admin, trivia, fun commands and much more!*
 
 > **Keeko** is a fully modular bot which comes with sets of features/commands that can be enabled/disabled to your liking, making it customizable exactly how you want.  
-You can turn Red into a trivia bot, an admin bot, a music bot (...) or all of these together.  
+You can turn Keeko into a trivia bot, an admin bot, a music bot (...) or all of these together.  
 
 The default set of modules includes and it's not limited to:
 * Moderation features (kick/ban/softban, filters, mod-log...)
@@ -28,3 +28,7 @@ Keeko is in continuous development, new features get added all the time and it's
 # License
 
 Released under the [GNU GPL v3](LICENSE).
+
+# Made from
+
+Made from [Red-DiscordBot](https://twentysix26.github.io/Red-Docs/)
