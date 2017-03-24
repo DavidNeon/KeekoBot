@@ -15,6 +15,7 @@ The default set of modules includes and it's not limited to:
 * Custom commands
 * Imgur/gif search
 * And much much more
+* Bot may be put down for a while, we are making it open source.
 
 
 
